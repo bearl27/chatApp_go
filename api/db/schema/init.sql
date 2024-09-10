@@ -1,0 +1,8 @@
+CREATE DATABASE chatapp;
+\c chatapp
+
+CREATE TABLE messages (
+    id SERIAL PRIMARY KEY,
+    content TEXT NOT NULL,
+    timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
