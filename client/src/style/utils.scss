@@ -1,0 +1,42 @@
+@mixin margin-x($value) {
+  margin-right: $value;
+  margin-left: $value;
+}
+
+@mixin margin-y($value) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+@mixin space-y($value) {
+  >*+* {
+    margin-top: $value;
+  }
+}
+
+@mixin space-x($value) {
+  >*+* {
+    margin-left: $value;
+  }
+}
+
+@mixin padding-x($value) {
+  padding-right: $value;
+  padding-left: $value;
+}
+
+@mixin padding-y($value) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+@mixin size($value) {
+  width: $value;
+  height: $value;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

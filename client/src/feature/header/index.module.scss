@@ -1,0 +1,18 @@
+@use "@/style/theme";
+@use "@/style/utils";
+
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  color: theme.$foreground;
+  background: theme.$accent;
+  @include utils.padding-y(1em);
+  @include utils.padding-x(2em);
+  @include utils.space-x(2em);
+
+  .link_button {
+    @include utils.flex-center;
+    @include utils.space-x(0.3em);
+  }
+}
